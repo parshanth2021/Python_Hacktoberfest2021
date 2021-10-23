@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float n1,n2;
+	char op,ch;
+	do{
+		cout<<"Enter first operand, operator and second operand"<<endl;
+		cin>>n1>>op>>n2;
+		    switch(op)
+		    {
+		    	case '+':
+		    		cout<<"Result of "<<n1<<"+"<<n2<<"is"<<" "<<n1+n2<<endl;
+		    		break;
+		    	case '-':
+				   	cout<<"Result of "<<n1<<"-"<<n2<<" is "<<" "<<n1-n2<<endl;	
+				   	break;
+				case '*':
+				   	cout<<"Result of "<<n1<<"*"<<n2<<" is "<<" "<<n1*n2<<endl;   
+					break;
+				case '/':
+				    cout<<"Result of "<<n1<<"/"<<n2<<" is "<<" "<<n1/n2<<endl;		
+		    }
+		    cout<<"Do you want to use the program again?(y/n)"<<endl;
+		    cin>>ch;
+	}
+	while(ch!='n');
+	return 0;
+}
