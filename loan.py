@@ -1,0 +1,8 @@
+print("\nLoan Calculator\n")
+loan=int(input("Enter loan: "))
+i=int(input("Enter Interest Rate: "))
+time=int(input("Enter No. of payments for return: "))
+i=i/(12*100)
+z=float((i+1)**time)
+money=float(loan*i*z/(z-1))
+print(money)
